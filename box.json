@@ -1,0 +1,48 @@
+{
+    "name":"Tweet Box",
+    "slug":"tweetbox",
+    "version":"0.2.1",
+    "author":"Matt Gifford @coldfumonkeh",
+    "location":"https://github.com/coldfumonkeh/tweet-box/archive/master.zip",
+    "createPackageDirectory":true,
+    "packageDirectory":"",
+    "homepage":"https://github.com/coldfumonkeh/tweet-box",
+    "documentation":"https://github.com/coldfumonkeh/tweet-box/blob/master/README.md",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/coldfumonkeh/tweet-box.git"
+    },
+    "bugs":"https://github.com/coldfumonkeh/tweet-box/issues",
+    "shortDescription":"A custom command for CommandBox to post Twitter status updates and send direct messages.",
+    "description":"A custom command for CommandBox to post Twitter status updates and send direct messages.",
+    "instructions":"https://github.com/coldfumonkeh/tweet-box/blob/master/README.md",
+    "changelog":"https://github.com/coldfumonkeh/tweet-box/commits/master",
+    "type":"commandbox-commands",
+    "keywords":[
+        "twitter",
+        "tweet",
+        "commandbox",
+        "commands"
+    ],
+    "private":"false",
+    "license":[
+        {
+            "type":""
+        }
+    ],
+    "dependencies":{
+        "monkehtweets":"1.4.8.0"
+    },
+    "contributors":[
+        {
+            "name":"Contributors List",
+            "url":"https://github.com/coldfumonkeh/tweet-box/graphs/contributors"
+        }
+    ],
+    "ignore":[
+        "README.md"
+    ],
+    "installPaths":{
+        "monkehtweets":"monkehTweets\\monkehtweets"
+    }
+}
