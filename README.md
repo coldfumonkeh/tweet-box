@@ -1,10 +1,10 @@
 # Tweet-Box
 
-Tweet-Box is a ColdBox Command that lets you post status updates and send direct messages through Twitter via the CLI.
+Tweet-Box is a CommandBox Command that lets you post status updates and send direct messages through Twitter via the CLI.
 
 ## Installation
 
-Firstly, you must have [CommandBox installed](http://ortus.gitbooks.io/commandbox-documentation/content/setup/installation.html)
+Firstly, you must have [CommandBox](http://ortus.gitbooks.io/commandbox-documentation/content/setup/installation.html) 2.3.0+ installed.
 
 Install this command into CommandBox CLI like so:
 ```bash
@@ -52,7 +52,7 @@ status message="foo"
 To send a direct message you will need to set the <code>dm</code> attribute to true and provide a <code>recipient</code> screen name, like so:
 
 ```bash
-tweet post message="Hey!" dm=true recipient="@coldfumonkeh"
+tweet post "Hey!" --dm @coldfumonkeh
 ```
 
 At present the command does nothing but repeat the posted message content into the console.

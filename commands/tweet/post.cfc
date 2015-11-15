@@ -13,20 +13,23 @@ component extends="base" aliases="status,post" excludeFromHelp=false {
 	*/
   function init() {
     super.init();
-    variables.configLocation = getDirectoryFromPath( getCurrentTemplatePath() )  & "config";
     variables.configName = "config.ini";
     return this;
   }
-
+  
+  function onDIComplete() {
+    variables.configLocation = shell.getConfigSettings().modules.tweetbox.path & "/config";
+  }
+  
   /**
   * @message.hint The message you want to tweet to the world
   * @dm.hint Whether or not the message should be a direct message
   * @recipient.hint The name of the recipient of the direct message (if dm is true)
 	**/
-	function run( string message = '', boolean dm = false, string recipient = '' ) {
+	function run( string message = '', string recipient = '', boolean dm = false ) {
     var result = '';
     var isGo = validateConfig();
-    var objMonkehTweet = createObject('component', 'monkehTweets.monkehtweets.com.coldfumonkeh.monkehTweet').init(argumentCollection=getInitArgs());
+    var objMonkehTweet = createObject('component', 'commandbox.monkehtweets.com.coldfumonkeh.monkehTweet').init(argumentCollection=getInitArgs());
 
     if ( isGo ) {
       if( len( arguments.message ) ) {
