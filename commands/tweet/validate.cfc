@@ -11,11 +11,14 @@ component extends="base" aliases="validate" excludeFromHelp=false {
   /**
 	* Constructor
 	*/
-  function init() {
+  function init() { 
     super.init();
-    variables.configLocation = getDirectoryFromPath( getCurrentTemplatePath() )  & "config";
     variables.configName = "config.ini";
     return this;
+  }
+  
+  function onDIComplete() {
+    variables.configLocation = shell.getConfigSettings().modules.tweetbox.path & "/config";
   }
 
   function run( ) {
