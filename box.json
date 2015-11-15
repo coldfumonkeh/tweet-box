@@ -4,8 +4,6 @@
     "version":"0.2.1",
     "author":"Matt Gifford @coldfumonkeh",
     "location":"https://github.com/coldfumonkeh/tweet-box/archive/master.zip",
-    "createPackageDirectory":false,
-    "packageDirectory":"",
     "homepage":"https://github.com/coldfumonkeh/tweet-box",
     "documentation":"https://github.com/coldfumonkeh/tweet-box/blob/master/README.md",
     "repository":{
@@ -17,7 +15,7 @@
     "description":"A custom command for CommandBox to post Twitter status updates and send direct messages.",
     "instructions":"https://github.com/coldfumonkeh/tweet-box/blob/master/README.md",
     "changelog":"https://github.com/coldfumonkeh/tweet-box/commits/master",
-    "type":"commandbox-commands",
+    "type":"commandbox-modules",
     "keywords":[
         "twitter",
         "tweet",

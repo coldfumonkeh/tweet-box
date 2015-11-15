@@ -5,12 +5,11 @@ component extends="commandbox.system.BaseCommand" {
     return this;
   }
 
-
   /**
   * Copies the skeleton config.ini file into the config directory if it does not exist.
   */
   private function copySkeletonConfig() {
-    FileCopy(getDirectoryFromPath( getCurrentTemplatePath() )  & "resources\config.ini.bak", variables.configLocation & '\' & variables.configName);
+    FileCopy( shell.getConfigSettings().modules.tweetbox.path & "/resources/config.ini.bak", variables.configLocation & '/' & variables.configName);
   }
 
   /**
