@@ -1,7 +1,6 @@
-component extends="commandbox.system.BaseCommand" {
+component {
 
   function init() {
-    super.init();
     return this;
   }
 
