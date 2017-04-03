@@ -29,7 +29,7 @@
         }
     ],
     "dependencies":{
-        "monkehtweets":"1.4.8.0"
+        "monkehtweet":"1.4.8.0"
     },
     "contributors":[
         {
