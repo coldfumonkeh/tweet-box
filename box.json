@@ -22,6 +22,11 @@
         "commandbox",
         "commands"
     ],
+    "scripts":{
+        "postVersion":"package set location='coldfumonkeh/tweet-box#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push --follow-tags",
+    },
     "private":"false",
     "license":[
         {
