@@ -1,9 +1,9 @@
 {
     "name":"Tweet Box",
     "slug":"tweetbox",
-    "version":"0.2.1",
+    "version":"0.3.0",
     "author":"Matt Gifford @coldfumonkeh",
-    "location":"https://github.com/coldfumonkeh/tweet-box/archive/master.zip",
+    "location":"coldfumonkeh/tweet-box#v0.3.0",
     "homepage":"https://github.com/coldfumonkeh/tweet-box",
     "documentation":"https://github.com/coldfumonkeh/tweet-box/blob/master/README.md",
     "repository":{
